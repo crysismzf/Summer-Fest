@@ -1,0 +1,114 @@
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+	font-size: 16px;
+}
+
+$font-family-headline: 'DM Serif Text', serif;
+$font-size-banner-1: 4rem;
+$font-size-banner-2: 2rem;
+
+header {
+	
+}
+
+.banner {
+	
+}
+
+%banner-size {	
+	height: 35rem;
+}
+
+%h2-typografy {
+	font-family: $font-family-headline;
+	text-transform: uppercase;
+	margin: 1.5rem 0 1.5rem 0; 
+}
+
+
+.banner-foto {
+	@extend %banner-size;
+	background: url("../img/banner.jpg");
+	background-size: cover;
+	z-index: 0;
+}
+
+.banner-text {
+	@extend %banner-size;	
+	width: 100%;	
+	font-family: $font-family-headline;
+	text-align: center;
+	text-transform: uppercase;
+		h1 {
+			font-size: $font-size-banner-1;	
+		}
+		.low-headline {
+			font-size: $font-size-banner-2;
+		}
+}
+
+.about {
+	h2{
+		@extend %h2-typografy;
+	}
+
+	.round {
+		width: 100%;	   	
+	}
+	
+}
+	
+.participants {	
+	h2{
+		@extend %h2-typografy;
+	}
+}	
+
+.tickets {
+	h2{
+		@extend %h2-typografy;
+	}
+	.btn-castom-style {
+
+	}
+}
+
+.btn-castom-style {
+	background: #fcd201;
+	color: red;
+}
+
+.map-row {
+	margin-top: 1.5rem;		
+}
+
+// высоту надо менять под разные устройства
+.map-col {
+	height: 400px;
+
+}
+
+footer {
+	background-color: #fcd201;
+	width: 100%;
+	height: 5rem; 
+	.soc {
+		font-size: 2rem;
+		.row {
+			margin: 1rem;
+			i {
+				margin: 0.5rem;
+			}
+		}
+	}
+}
